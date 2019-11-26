@@ -1,0 +1,107 @@
+
+body {
+    font-family: 'Kanit', sans-serif;
+    min-height: 100vh;
+    background: #272626;
+    background: linear-gradient(0deg, #4b6cb7 0%, #182848 100%);
+    margin: 0;
+    padding: 0 5%;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4vw;
+    margin: 0;
+}
+
+
+section {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+}
+section#headSection {
+    padding: 20px 0 40px;
+}
+
+.form-box {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px 20px;
+}
+form {
+    display: flex;
+    justify-content: start;
+}
+input[type=text] {
+    height: 30px;
+    width: 50%;
+    font-size: 18px;
+    padding-left: 18px;
+}
+input[type=button] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=submit] {
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    padding: 0px 42px;
+    text-decoration: none;
+    margin: 0px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    background: linear-gradient(140deg, #00d2ff 0%, #3a47d5 100%);
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
+
+button {
+    background: #ffe0ea;
+    color: #d33369;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 0 26px;
+    cursor: pointer;
+    border: 1px solid #fff0f7;
+    letter-spacing: 0.04em;
+}
+ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+li {
+    padding: 20px;
+    background: #182543;
+    margin: 9px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 2vw;
+}
+li.not-done {
+    background: linear-gradient(126deg, #d53369 0%, #b03978 100%);
+}
+li.is-done {
+    background: linear-gradient(90deg, #1ba978 0%, #3ad59f 100%);
+}

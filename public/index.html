@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="js/bundle.js"></script>
+  </head>
+  <body>
+<section id="headSection">
+      <h1>Todo's List</h1>
+</section>
+
+
+    <section>
+      <div id="app">
+        <div class="form-box">
+          <form v-on:submit.prevent="addTodo">
+            <label for="newTodo" placeholder="Enter Task"></label>
+            <input id="newTodo" type="text" v-model="newTodo">
+            <input id="newTodo" type="submit" value="Add Todo">
+          </form>
+        </div>
+
+        <ul>
+          <li v-for="(todo, index) in todos" v-bind:class=" todo.isDone ? 'is-done' : 'not-done' ">
+            <span>{{todo.task}}</span>
+            <span v-if="todo.isDone">Done!</span>
+            <button v-if="!todo.isDone" v-on:click="doTask(index)" type="button" name="button">
+            To be Done</button>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
